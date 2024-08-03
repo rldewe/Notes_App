@@ -61,14 +61,14 @@ exports.home = async (req, res) => {
   }
 
   //del
-  exports.dashboardDeleteNote = async (req, res) => {
-    try {
-      await Note.deleteOne({ _id: req.params.id }).where({ user: req.user.id });
-      res.redirect("/dashboard");
-    } catch (error) {
-      console.log(error);
-    }
-  };
+  // exports.dashboardDeleteNote = async (req, res) => {
+  //   try {
+  //     await Note.deleteOne({ _id: req.params.id }).where({ user: req.user.id });
+  //     res.redirect("/dashboard");
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
+  // };
 
   //add
   exports.dashboardAddNote = async (req, res) => {

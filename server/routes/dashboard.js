@@ -9,7 +9,7 @@ const dashboardController = require('../controllers/dashboardController');
 router.get('/dashboard',isLoggedIn, dashboardController.home);
 router.get('/dashboard/item/:id', isLoggedIn, dashboardController.dashboardViewNote);
 router.put('/dashboard/item/:id', isLoggedIn, dashboardController.dashboardUpdateNote);
-router.delete('/dashboard/delete-item/:id', isLoggedIn, dashboardController.dashboardDeleteNote);
+//router.delete('/dashboard/delete-item/:id', isLoggedIn, dashboardController.dashboardDeleteNote);
 router.get('/dashboard/add',isLoggedIn,dashboardController.dashboardAddNote);
 router.post('/dashboard/add',isLoggedIn,dashboardController.dashboardSubmitNote);
 
